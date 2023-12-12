@@ -1,0 +1,85 @@
+.footer {
+  padding: 80px 0;
+  background-color: $level-1;
+
+  @media screen and (max-width: 1024px) {
+    padding: 80px 40px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 48px 20px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 767px) {
+      flex-flow: column;
+      gap: 48px;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-flow: column;
+  }
+
+  &__logo {
+    margin-bottom: 32px;
+
+    @media screen and (max-width: 767px) {
+      height: 40px;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__social-link {
+
+  }
+
+  &__menu {
+    display: flex;
+    gap: 24px;
+
+    @media screen and (max-width: 767px) {
+      flex-flow: column;
+      gap: 0;
+    }
+  }
+
+  &__menu-col {
+
+  }
+
+  &__nav {
+
+  }
+
+  &__nav-item {
+    display: block;
+    padding: 12px 0;
+    color: $text;
+    width: 154px;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  &__copyright {
+    color: $light-grey;
+    margin-top: 46px;
+
+    @media screen and (max-width: 1024px) {
+      max-width: 330px;
+    }
+  }
+}

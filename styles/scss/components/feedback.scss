@@ -1,0 +1,66 @@
+.feedback {
+  padding: 120px 0;
+
+  @media screen and (max-width: 1024px) {
+    padding: 80px 40px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 48px 20px;
+  }
+
+  &__content {
+    display: flex;
+    gap: 24px;
+
+    @media screen and (max-width: 767px) {
+      flex-flow: column;
+      gap: 8px;
+    }
+  }
+
+  &__col {
+    flex: 1;
+  }
+
+  &__form {
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+  }
+
+  &__input {
+    display: flex;
+    flex-flow: column-reverse;
+    gap: 8px;
+
+    input,
+    textarea {
+      color: $text;
+      background-color: $level-1;
+      outline: none;
+      border: none;
+      font-family: Sen;
+      padding: 12px;
+      resize: none;
+
+      &:focus ~ label {
+        color: $primary;
+      }
+    }
+
+    label {
+      transition: color 0.2s;
+    }
+  }
+
+  &__submit {
+    text-transform: uppercase;
+    padding: 24px 32px;
+    background-color: $primary;
+    border: none;
+    outline: none;
+    color: $text;
+    font-weight: 700;
+  }
+}

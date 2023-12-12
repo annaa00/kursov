@@ -1,0 +1,19 @@
+body {
+  background-color: $base;
+  color: $text;
+}
+
+.container {
+  max-width: 1296px;
+  //max-width: 1320px;
+  //padding: 0 12px;
+  margin: auto;
+
+  &_lg {
+    max-width: 1440px;
+  }
+
+  &_sm {
+    max-width: 1076px;
+  }
+}

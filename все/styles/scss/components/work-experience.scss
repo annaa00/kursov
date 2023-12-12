@@ -1,0 +1,70 @@
+.work-experience {
+  padding: 120px 0 144px;
+
+  @media screen and (max-width: 1024px) {
+    padding: 80px 40px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 48px 20px;
+  }
+
+  &__header {
+    max-width: 690px;
+    margin-bottom: 40px;
+  }
+
+  &__tag {
+    margin-bottom: 8px;
+    color: $light-grey;
+  }
+
+  &__title {
+
+  }
+
+  &__list {
+    display: flex;
+    gap: 24px;
+
+    @media screen and (max-width: 767px) {
+      flex-flow: column;
+      gap: 48px;
+    }
+  }
+
+  &__item {
+    flex: 1;
+    padding-right: 48px;
+
+    @media screen and (max-width: 767px) {
+      padding-right: unset;
+    }
+  }
+
+  &__item-number {
+  color: $light-grey;
+  }
+
+  &__item-title {
+    margin-bottom: 22px;
+  }
+
+  &__item-title-accent {
+    &_green {
+      color: $green-accent;
+    }
+
+    &_blue {
+      color: $blue-accent;
+    }
+
+    &_pink {
+      color: $pink-accent;
+    }
+  }
+
+  &__item-description {
+    color: $light-grey;
+  }
+}

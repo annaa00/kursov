@@ -1,0 +1,36 @@
+.logos {
+  &__list {
+    border: 1px solid $level-1;
+    display: flex;
+
+    @media screen and (max-width: 1024px) {
+      flex-wrap: wrap;
+      border-bottom: none;
+    }
+  }
+
+  &__item {
+    flex: 1;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(:last-child) {
+      border-right: 1px solid $level-1;
+    }
+
+    &_desktop-hidden {
+      display: none;
+
+      @media screen and (max-width: 1024px) {
+        display: flex;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      min-width: 49%;
+      border-bottom: 1px solid $level-1;
+    }
+  }
+}

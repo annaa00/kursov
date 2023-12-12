@@ -1,0 +1,36 @@
+.dribble {
+  padding: 120px 0;
+
+  @media screen and (max-width: 1024px) {
+    padding: 80px 40px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 64px 20px;
+  }
+
+  &__content {
+    display: flex;
+    flex-flow: column;
+    gap: 120px;
+
+    @media screen and (max-width: 767px) {
+      gap: 64px;
+    }
+  }
+
+  &__img {
+    img {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+      height: 512px;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.label-1 {
+  font-family: Sen;
+  font-size: 117px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+h1 {
+  font-family: Sen;
+  font-size: 78px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 56px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 32px;
+  }
+}
+
+h2 {
+  font-family: Sen;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+
+  @media screen and (max-width: 767px) {
+    font-size: 32px;
+  }
+}
+
+h3 {
+  font-family: Sen;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 36px */
+  margin: 0;
+}
+
+h4 {
+  font-family: Sen;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+  margin: 0;
+}
+
+h5 {
+  font-family: Sen;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+  margin: 0;
+}
+
+.p1 {
+  font-family: Sen;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+  margin: 0;
+}
+
+.p2 {
+  font-family: Sen;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin: 0;
+}
+
+
+.overline {
+  font-family: Sen;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+  text-transform: uppercase;
+  margin: 0;
+}
